@@ -1,5 +1,5 @@
-(1..100).each do |number|
-  Task.create(content: 'test content' + number.to_s, status: 't_st' + number.to_s)
+(1..30).each do |number|
+  Task.create(content: 'テスト投稿' + number.to_s, status: '起票', user_id: 1)
 end
 
 # This file should contain all the record creation needed to seed the database with its default values.
