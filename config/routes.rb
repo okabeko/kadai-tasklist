@@ -13,6 +13,6 @@ Rails.application.routes.draw do
   
   # ユーザ登録用のルーティング。edit,update,destroyを除く
   get 'signup', to: 'users#new'
-  resources :users, only: [ :show, :new, :create ]
+  resources :users, only: [ :new, :create ]
   
 end
